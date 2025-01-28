@@ -1,0 +1,41 @@
+**GNSS**
+- **GPS**
+- **Galileo**
+- **GLONAS**
+- **BeiDou**
+- **IRNSS**
+- **QZSS**
+
+**Orbit**: <br>
+https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits
+
+* **Geostationary orbit or Geosynchronous Equatorial 
+Orbit (GEO)**
+* **Medium Earth orbit (MEO)**
+* Low Earth orbit (LEO)
+* Polar orbit (PO)
+* Sun-synchronous orbit (SSO) 
+* Highly eccentric orbit (HEO)
+* Transfer orbits and geostationary transfer orbit (GTO)
+* Lagrange points (L-points)
+* Heliocentric orbit
+
+**Constellations**: A satellite constellation (or swarm) is a network of identical or similar-type artificial units with the same purpose and shared control.https://eos.com/blog/satellite-constellation/<br>
+Major constllations:
+GEO Satellite Constellations
+MEO Satellite Constellations
+LEO Satellite Constellations
+
+SBAS
+ABAS
+GBAS
+
+
+DGNSS
+RTK
+PPP
+PPP-RTK
+PPK
+
+CORS
+NTRIP
