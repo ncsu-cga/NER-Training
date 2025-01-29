@@ -26,9 +26,10 @@ GEO Satellite Constellations
 MEO Satellite Constellations
 LEO Satellite Constellations
 
-SBAS
-ABAS
-GBAS
+**GNSS augmentation**:
+SBAS: Satellite-based augmentation systems
+ABAS: Aircraft-based augmentation system
+GBAS: Ground-based augmentation system
 
 
 DGNSS

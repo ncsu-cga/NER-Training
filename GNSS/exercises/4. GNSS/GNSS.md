@@ -1,17 +1,8 @@
-# GPS and GNSS
+# Global Navigation Satellite System (GNSS)
 
-GPS (Global Positioning System) and GNSS (Global Navigation Satellite System) are both satellite-based navigation systems, but they have some differences.
+GNSS is a global network of satellites, whose orbits and timing are broadcast by satellite for the purposes of navigation and positioning.
 
-![GPS vs GNSS](../../assets/images/gnss/gps_vs_gnss.png)<br>
-*Image: GPS vs GNSS [^1]*
-
-### GPS:
-* Developed and maintained by the United States.
-* Consists of a constellation of at least 31 satellites.[^2]
-* Provides global coverage.
-* Primarily used for navigation, mapping, and timing.
-
-### GNSS Constellations
+## GNSS Constellations
 A satellite constellation is a network of similar artificial units with shared control, communicating with global ground stations and designed to work together as a system.
 
 * [GPS (USA)](https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/gps), 
@@ -19,23 +10,23 @@ A satellite constellation is a network of similar artificial units with shared c
 * [Galileo (European Union)](https://www.euspa.europa.eu/eu-space-programme/galileo), 
 * [BeiDou (China)](http://en.beidou.gov.cn/), and 
 * others ([IRNSS/NavIC (India)](https://www.ursc.gov.in/navigation/irnss.jsp),
-[QZSS(Japan)](https://qzss.go.jp/en/overview/services/sv02_why.html)).
+[QZSS (Japan)](https://qzss.go.jp/en/overview/services/sv02_why.html)).
 
 
 ![4 GNSS constellations](../../assets/images/gnss/gnss_constellations.png)<br>
 *Image: 4 GNSS constellations [^5]*<br>
 
-### Updates:<br>
+**Updates:**<br>
 The number of satellites and their operational status changes over time. This information pertains to April 2023.
 * GPS - 31 satellites (31 operational)[^2][^6]<br>
 * GLONASS - 25 satellites (24 operational)[^6]<br>
 * Galileo - 28 satellites (24 operational)[^6]<br>
 * BeiDou - 29 satellites (27 operational)[^6]<br>
 
-https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/gps/howitworks#:~:text=However%2C%20by%20taking%20a%20measurement,longitude%2C%20altitude%2C%20and%20time.
-https://cmr.earthdata.nasa.gov/search/concepts/C1419766346-CDDIS.html
 
 ## GNSS Architechture
+GNSS systems are composed of three segments: 
+
 1. **Space segment** - 
 Series of satellites continuously transmit signals.
 
@@ -49,8 +40,8 @@ Consists of ground-based monitor stations, master control stations, and upload s
 
 Bhatta, B. (2021). Functional Segments of GNSS. Global Navigation Satellite Systems: New Technologies and Applications (2nd ed.). CRC Press. https://doi.org/10.1201/9781003148753
 
-![GNSS Architecture](../../assets/images/gnss/gnss_architecture.png)
-*Source [GPS segments (source: J. Sanz Subirana, JM. Juan Zornoza and M. Hernández-Pajares, Global Navigation Satellite Systems: Volume I: Fundamentals and Algorithms]()*
+![GNSS Architecture](../../assets/images/gnss/gnss_segments.png)
+*Source [What are Global Navigation Satellite Systems?](https://novatel.com/tech-talk/an-introduction-to-gnss/what-are-global-navigation-satellite-systems-gnss), NovAtel*
 
 ## GNSS Signal
 https://usq.pressbooks.pub/gpsandgnss/chapter/3-4-gnss-signals/
@@ -79,27 +70,27 @@ satellites in the constellation
 
 
 ## GNSS Argumentations
-Augmenting a global navigation satellite system (GNSS) enhances its performance in terms of *accuracy*, *reliability*, and *availability* by incorporating external information into the user's position solution. The augmentation 
+Augmenting a global navigation satellite system (GNSS) enhances its performance in terms of **_accuracy_**, **_reliability_**, and **_availability_** by incorporating external information into the user's position solution.
 
 **Satellite Based Augmentation Systems (SBAS)**<br>
-Each SBAS composed of 3 segments:
-Ground segment
-* Reference stations, master control stations, uplink stations
-to receive signals from GNSS and SBAS and make corrections and send back to them.
+SBAS are geosynchronous satellite systems receive correction information from the control segment and transmit it to user segments. 
 
-Space segment
-Receive corrections from uplink station and rebroad cast to user segment.
+**Implemented SBAS services:**
+Global
+* Wide Area Augmentation System (WAAS) (United States)
+* European Geostationary Navigation Overlay Service (EGNOS) (European Space Agency)
+* BeiDou Satellite-Based Augmentation System (BDSBAS) (China)
+Regional
+* MTSAT Satellite Based Augmentation System (MSAS) (Japan)
+* GPS-Aided GEO Augmented Navigation (GAGAN) system (India)
 
-User segment
-Use GNSS receiver to get GNSS satellite signal and correction to calculate location.
 
-![](../../assets/images/gnss/gnss_sbas.png)<br>
-*Image: Satellite integrity monitoring system for SBAS (Li et al 2020) [^7]*
+![SBAS](../../assets/images/gnss/gnss_sbas.png)
+*Source: [Satellite Based Augmentation System (SBAS)](https://novatel.com/an-introduction-to-gnss/resolving-errors/sbas), NovAtel*
 
-Ground Based Augmentation System (GBAS)
-Reference station
-Aircraft Based augmentation system (ABAS)
-Differential GNSS (DGNSS)
+
+*Ground Based Augmentation System (GBAS)*<br>
+GBAS was initially referred to as the Local Area Augmentation System (LAAS). Networks of GBAS use VHF or UHF frequencies and provide localized reception within tens of kilometres of receivers and it is primarily used in aviation purposes. [see](https://www.faa.gov/airports/planning_capacity/non_federal/gbas)
 
 #### How GPS maintain accurate orbit and time
 * Atomic clocks - typically measuring time to within a nanosecond (one billionth of a second). 
@@ -122,4 +113,9 @@ satellites to maintain accuracy. [^4]
 
 [^6]: [GPS Overview Part 1: What is GPS and GNSS Positioning?](https://eos-gnss.com/knowledge-base/gps-overview-1-what-is-gps-and-gnss-positioning), EOS Positioning Systems.
 
-[^7]: Li, Rui, et al. "Advances in BeiDou Navigation Satellite System (BDS) and satellite navigation augmentation technologies." Satellite Navigation 1 (2020): 1-23.
+
+
+
+---
+https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss/gps/howitworks#:~:text=However%2C%20by%20taking%20a%20measurement,longitude%2C%20altitude%2C%20and%20time.
+https://cmr.earthdata.nasa.gov/search/concepts/C1419766346-CDDIS.html
