@@ -92,29 +92,77 @@ Slightly more complex than traditional GNSS methods.
         <tr>
             <td style="text-align: center">DGNSS</td>
             <td>1-3 meters</td>
-            <td>Simple, real-time corrections, widely available</td>
-            <td>Lower accuracy, limited range (depends on reference stations), susceptible to interference</td>
+            <td>
+                <ul>
+                    <li>Relatively simple to implement.</li>
+                    <li>Available in many regions (especially near coastal areas, due to the availability of reference stations).</li>
+                    <li>Provides real-time corrections, improving accuracy over basic GNSS.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Limited accuracy compared to more advanced techniques like RTK or PPP.</li>
+                    <li>Requires local reference stations, which might not be available in remote areas.</li>
+                    <li>Can be affected by signal interference or multipath errors.</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td style="text-align: center">RTK</td>
             <td>1-3 cm (centimeter level)</td>
-            <td>Real-time, high accuracy, ideal for precision work</td>
-            <td>Requires communication link, affected by obstructions</td>
+            <td>
+                <ul>
+                    <li>High accuracy, providing centimeter-level precision in real-time.</li>
+                    <li>Great for applications that need precise positioning (e.g., surveying, construction, autonomous vehicles).</li>
+                    <li>Real-time corrections reduce the need for post-processing.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Requires a nearby base station, which might not be available in remote areas.</li>
+                    <li>Susceptible to signal obstructions (e.g., buildings, trees) and atmospheric conditions.</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td style="text-align: center">PPP</td>
-            <td>Sub-centimeter (post-processing) or decimeter (real-time)</td>
-            <td>No need for local stations, accurate after post-processing</td>
-            <td>Requires post-processing (except for real-time PPP), slower processing, limited real-time accuracy</td>
+            <td>Sub-centimeter to centimeter-level</td>
+            <td>
+                <ul>
+                    <li>No need for a local reference station, so it can be used anywhere in the world.</li>
+                    <li>Highly accurate after post-processing.</li>
+                    <li>Suitable for remote areas and areas where RTK may not be feasible.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Post-processing is required for high-precision results, which means it's not a real-time solution.</li>
+                    <li>Processing can be time-consuming.</li>
+                    <li>Real-time PPP is still evolving and not as accurate as RTK in real-time.</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td style="text-align: center">PPK</td>
             <td>1-3 cm (centimeter level)</td>
-            <td>High accuracy, suitable for remote areas, no need for real-time link</td>
-            <td>Requires post-processing, no real-time feedback</td>
+            <td>
+                <ul>
+                    <li>High accuracy, suitable for remote areas, no need for real-time link</li>
+                    <li>Great for applications where real-time corrections are not essential (e.g., aerial surveys, geodesy).</li>
+                    <li>Useful when communication links are unreliable or unavailable during data collection.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Requires post-processing, so it's not suitable for real-time applications.</li>
+                    <li>Data must be collected and stored during the operation, which requires more storage space and processing time afterward.</li>
+                    <li>Slightly more complex than traditional GNSS methods.</li>
+                </ul>
+            </td>
         </tr>
     </tbody>
 </table>
+
 
 ## Summary:
 DGNSS is best for basic corrections with relatively lower accuracy.
