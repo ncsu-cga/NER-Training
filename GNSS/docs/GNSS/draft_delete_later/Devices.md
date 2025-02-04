@@ -71,3 +71,24 @@ When to use
 
 
 
+# Precise Point Positioning (PPP) Services with EOS Arrow
+* Galileo High Accuracy Service (HAS)
+  * Initial Service on the 24th of January 2023
+  * Global coverage (Service Level 1 (SL1)) -  typical convergence time of less than 300 seconds (5 minutes)
+  * Regional coverage availability over the European Coverage Area (ECA) (Service Level 2 (SL2)) - convergence time will be lower than 100 seconds
+  * Free of charge
+  * Real-time corrections
+  * Accuracy target (95%): 20cm (horizontal) / 40cm (vertical)
+  * E6-B signal
+  * Internet not required
+  [EOS Positioning](https://eos-gnss.com/blog/galileo-high-accuracy-service-early-observations)
+  Note: [Galileo HAS Internet Data Distribution](https://www.gsc-europa.eu/galileo/services/galileo-high-accuracy-service-has/internet-data-distribution) service also available.
+  [FAQs on HAS](https://www.gsc-europa.eu/galileo/faq#HAS)  
+
+[Have you met HAS? 22 Jan 2024](https://www.euspa.europa.eu/newsroom-events/news/have-you-met-has#:~:text=While%20SL1%20will%20have%20a,be%20lower%20than%20100%20seconds.)
+[PPP Galileo HAS Technology: Pros and Cons](https://gpsgeometer.com/en/blog/pros-and-cons-of-ppp-galileo-has)
+
+### Precise Point Positioning (PPP) Services with Leica SmartLink
+* Subscription-based
+* Correction based argumentation satellites
+[SmartLink](https://leica-geosystems.com/en-us/products/gnss-systems/smart-antennas/leica-viva-gs16/life-beyond-traditional-rtk-satellite-based-precise-point-positioning)
